@@ -1,8 +1,8 @@
 ---
 plugin:
-  name: ""
-  description: ""
-  image: ""
+  name: console-plugin-tekton-operator
+  description: console-plugin-tekton-operator
+  image: console-plugin-tekton-operator
   imagePullPolicy: IfNotPresent
   imagePullSecrets: []
   replicas: 2
@@ -25,15 +25,15 @@ plugin:
       cpu: 10m
       memory: 50Mi
   basePath: /
-  certificateSecretName: ""
+  certificateSecretName: console-plugin-tekton-operator
   serviceAccount:
     create: true
     annotations: {}
-    name: ""
+    name: console-plugin-tekton-operator
   patcherServiceAccount:
     create: true
     annotations: {}
-    name: ""
+    name: console-plugin-tekton-operator
   jobs:
     patchConsoles:
       enabled: true
