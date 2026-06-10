@@ -90,11 +90,14 @@
     "displayName": "Tekton Operator",
     "description": "OpenShift Console plugin for Tekton Operator configuration and management",
     "exposedModules": {
-      "ExamplePage": "./components/ExamplePage"
+      "TektonConfigPage": "./components/TektonConfigPage"
     },
     "dependencies": {
       "@console/pluginAPI": ">=4.22.0-0"
     }
   },
-  "packageManager": "yarn@4.14.1"
+  "packageManager": "yarn@4.14.1",
+  "dependencies": {
+    "react-router-dom": "^7.17.0"
+  }
 }

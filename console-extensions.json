@@ -1,20 +1,28 @@
 [
   {
+    "type": "console.navigation/section",
+    "properties": {
+      "id": "tekton-operator",
+      "perspective": "admin",
+      "name": "%plugin__console-plugin-tekton-operator~Tekton Operator%"
+    }
+  },
+  {
     "type": "console.page/route",
     "properties": {
       "exact": true,
-      "path": "/example",
-      "component": { "$codeRef": "ExamplePage" }
+      "path": "/tekton-operator/config",
+      "component": { "$codeRef": "TektonConfigPage" }
     }
   },
   {
     "type": "console.navigation/href",
     "properties": {
-      "id": "example",
-      "name": "%plugin__console-plugin-template~Plugin example%",
-      "href": "/example",
+      "id": "tektonconfig-nav",
       "perspective": "admin",
-      "section": "home"
+      "section": "tekton-operator",
+      "name": "%plugin__console-plugin-tekton-operator~Tekton Configuration%",
+      "href": "/tekton-operator/config"
     }
   }
 ]
